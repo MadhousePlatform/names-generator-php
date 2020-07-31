@@ -737,10 +737,10 @@ class NamesGenerator
      *
      * @return string
      */
-    public function __invoke(array $params = [])
-    {
-        return static::generate($params);
-    }
+	public function __invoke(array $params = [])
+	{
+		return static::generate($params);
+	}
 
 	/**
      * Generate Docker-like random names to use in your applications.
@@ -751,23 +751,23 @@ class NamesGenerator
 	public static function generate(array $params = [])
 	{
 		$defaults = [
-            "delimiter" => "-",
-            "token" => 0,
-            "chars"  => "0123456789",
-        ];
+			"delimiter" => "-",
+			"token" => 0,
+			"chars"  => "0123456789",
+		];
 
-        $params = array_merge($defaults, $params);
+		$params = array_merge($defaults, $params);
 
-        $adjective = self::$adjectives[mt_rand(0, count(self::$adjectives) - 1)];
-        $person = self::$people[mt_rand(0, count(self::$people) - 1)];
+		$adjective = self::$adjectives[mt_rand(0, count(self::$adjectives) - 1)];
+		$person = self::$people[mt_rand(0, count(self::$people) - 1)];
 
-        $token = "";
-        for ($i = 0; $i < $params["token"]; $i++) {
-            $token .= $params["chars"][mt_rand(0, strlen($params["chars"]) - 1)];
-        }
+		$token = "";
+		for ($i = 0; $i < $params["token"]; $i++) {
+			$token .= $params["chars"][mt_rand(0, strlen($params["chars"]) - 1)];
+		}
 
-        $sections = [$adjective, $person, $token];
+		$sections = [$adjective, $person, $token];
 
-        return implode($params["delimiter"], array_filter($sections));
+		return implode($params["delimiter"], array_filter($sections));
 	}
 }

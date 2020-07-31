@@ -9,23 +9,23 @@ class NamesGeneratorTest extends TestCase
 {
 
 	private $adjectives = [];
-    private $people = [];
+	private $people = [];
 
 	public function setUp() : void
 	{
 		parent::setUp();
 
 		$this->adjectives = NamesGenerator::$adjectives;
-        $this->people = NamesGenerator::$people;
+		$this->people = NamesGenerator::$people;
 	}
 
 	protected function tearDown(): void
-    {
-        parent::tearDown();
+	{
+		parent::tearDown();
 
-        NamesGenerator::$adjectives = $this->adjectives;
-        NamesGenerator::$people = $this->people;
-    }
+		NamesGenerator::$adjectives = $this->adjectives;
+		NamesGenerator::$people = $this->people;
+	}
 
 	public function testRandomNameWithoutOptions()
 	{
