@@ -1,5 +1,5 @@
 {
-    "name": "nordpeak/names-generator",
+    "name": "nordpeak/random-names-generator",
     "description": "Small library that generates a Docker like random name from the list of adjectives and surnames of famous people in the science and tech world.",
     "keywords": ["random", "generator", "inspiring"],
     "authors": [
