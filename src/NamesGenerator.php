@@ -733,11 +733,12 @@ class NamesGenerator
     ];
 
     /**
-     * @param array $params
-     *
-     * @return string
+     * Invoke
+     * 
+     * @param Array $params
+     * @return String $name
      */
-    public function __invoke(array $params = [])
+    public function __invoke(Array $params = [])
     {
         return static::generate($params);
     }
@@ -745,10 +746,10 @@ class NamesGenerator
     /**
      * Generate Docker-like random names to use in your applications.
      *
-     * @param  array $params
-     * @return string
+     * @param  Array $params
+     * @return String $name
      */
-    public static function generate(array $params = [])
+    public static function generate(Array $params = [])
     {
         $defaults = [
             "delimiter" => "-",

@@ -16,10 +16,10 @@ Small library that generates a **Docker** like random name from the list of adje
 
 ## Installation
 
-This package uses [composer](https://getcomposer.org/) so you can just add `nordpeak/names-generator`  as a dependency to your `composer.json` file or execute the following command:
+This package uses [composer](https://getcomposer.org/) so you can just add `nordpeak/random-names-generator`  as a dependency to your `composer.json` file or execute the following command:
 
 ```php
-composer require nordpeak/names-generator
+composer require nordpeak/random-names-generator
 ```
 
 
