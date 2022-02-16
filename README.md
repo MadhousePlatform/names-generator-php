@@ -16,10 +16,10 @@ Small library that generates a **Docker** like random name from the list of adje
 
 ## Installation
 
-This package uses [composer](https://getcomposer.org/) so you can just add `nordpeak/random-names-generator`  as a dependency to your `composer.json` file or execute the following command:
+This package uses [composer](https://getcomposer.org/) so you can just add `madhouseplatform/random-names-generator`  as a dependency to your `composer.json` file or execute the following command:
 
 ```php
-composer require nordpeak/random-names-generator
+composer require madhouseplatform/random-names-generator
 ```
 
 
@@ -58,11 +58,15 @@ NamesGenerator::generate([
 
 ## Credits
 
+Based on [SimplyCreativeStudio](https://github.com/SimplyCreativeStudio/names-generator-php/names-generator-php)
+
+---
+
 Heavily inspired and sourced from the docker namesgenerator library.
 
 https://github.com/moby/moby/tree/master/pkg/namesgenerator
 
-
+---
 
 Code and setup based on atrox/haikunator library.
 
