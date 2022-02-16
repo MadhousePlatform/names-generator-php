@@ -4,6 +4,11 @@
     "keywords": ["random", "generator", "inspiring"],
     "authors": [
         {
+            "name": "Denver F",
+            "email": "sketch@sketchni.uk",
+            "role": "Developer"
+        },
+        {
             "name": "Glenn Engelen",
             "email": "glenn@nordpeak.studio",
             "role": "Developer"
@@ -18,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Nordpeak\\": "src/"
+            "MadhousePlatform\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Nordpeak\\Tests\\": "tests/"
+            "MadhousePlatform\\Tests\\": "tests/"
         }
     }
 }

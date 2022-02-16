@@ -1,15 +1,15 @@
 <?php
 
-namespace Nordpeak\Tests;
+namespace MadhousePlatform\Tests;
 
-use Nordpeak\NamesGenerator;
+use MadhousePlatform\NamesGenerator;
 use PHPUnit\Framework\TestCase;
 
 class NamesGeneratorTest extends TestCase
 {
 
-    private $adjectives = [];
-    private $people = [];
+    private array $adjectives = [];
+    private array $people = [];
 
     public function setUp() : void
     {
@@ -34,7 +34,7 @@ class NamesGeneratorTest extends TestCase
 
         $random_name = NamesGenerator::generate();
 
-        $this->assertEquals("inspiring-wozniak", $random_name); 
+        $this->assertEquals("inspiring-wozniak", $random_name);
     }
 
     public function testRandomNameWithDelimiterOption()

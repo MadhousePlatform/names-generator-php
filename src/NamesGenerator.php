@@ -1,10 +1,10 @@
 <?php
 
-namespace Nordpeak;
+namespace MadhousePlatform;
 
 class NamesGenerator
 {
-    public static $adjectives = [
+    public static array $adjectives = [
         "admiring", "adoring", "affectionate", "agitated", "amazing", "angry", "awesome", "beautiful", "blissful", "bold",
         "boring", "brave", "busy", "charming", "clever", "cool", "compassionate", "competent", "condescending", "confident",
         "cranky", "crazy", "dazzling", "determined", "distracted", "dreamy", "eager", "ecstatic", "elastic", "elated", "elegant",
@@ -17,7 +17,7 @@ class NamesGenerator
         "upbeat", "vibrant", "vigilant", "vigorous", "wizardly", "wonderful", "xenodochial", "youthful", "zealous", "zen",
     ];
 
-    public static $people = [
+    public static array $people = [
         // Muhammad ibn Jābir al-Ḥarrānī al-Battānī was a founding father of astronomy. https://en.wikipedia.org/wiki/Mu%E1%B8%A5ammad_ibn_J%C4%81bir_al-%E1%B8%A4arr%C4%81n%C4%AB_al-Batt%C4%81n%C4%AB
         "albattani",
 
@@ -734,11 +734,11 @@ class NamesGenerator
 
     /**
      * Invoke
-     * 
-     * @param Array $params
+     *
+     * @param array $params
      * @return String $name
      */
-    public function __invoke(Array $params = [])
+    public function __invoke(array $params = []): string
     {
         return static::generate($params);
     }
@@ -746,10 +746,10 @@ class NamesGenerator
     /**
      * Generate Docker-like random names to use in your applications.
      *
-     * @param  Array $params
+     * @param  array $params
      * @return String $name
      */
-    public static function generate(Array $params = [])
+    public static function generate(array $params = []): string
     {
         $defaults = [
             "delimiter" => "-",
